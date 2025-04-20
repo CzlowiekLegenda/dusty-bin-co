@@ -82,7 +82,7 @@ footer {
 }
 
 .logo img {
-  height: 80px;         /* było 40px */
+  height: 55px;         /* było 40px */
   max-width: 200px;     /* było 160px */
   object-fit: contain;
 }
