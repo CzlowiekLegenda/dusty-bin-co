@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background: #1b1d1a;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 40px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.logo img {
+  height: 40px;
+  max-width: 160px;
+  object-fit: contain;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  color: #f4e5c0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #c2a76d;
+}
+
+.nav-links li a:visited {
+  color: #f4e5c0;
+  text-decoration: none;
+}
+
+/* TREŚĆ */
+.section-container {
+  padding: 120px 20px 60px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.section-container h1 {
+  color: #c2a76d;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.section-container p {
+  font-size: 1.1rem;
+  margin-bottom: 60px;
+  color: #ddd;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.member {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.member img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.member h3 {
+  margin: 10px 0 5px;
+  color: #a3c168;
+}
+
+.member p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+footer {
+  background-color: #101110;
+  color: #888;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .team {
+    flex-direction: column;
+    align-items: center;
+  }
+}
