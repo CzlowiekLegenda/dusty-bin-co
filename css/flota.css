@@ -85,21 +85,36 @@ body {
 /* GALERIA NA GÓRZE */
 .gallery {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+  flex-direction: row;
   gap: 25px;
   overflow-x: auto;
-  padding: 10px 0 30px;
-  margin-bottom: 20px;
-  scrollbar-width: none; /* Firefox */
+  padding: 20px;
+  margin-bottom: 30px;
+  scrollbar-width: thin;
+  scrollbar-color: #444 #1b1d1a; /* thumb, track (dla Firefox) */
 }
 
+/* Scrollbar – Chrome, Edge, Safari */
 .gallery::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  height: 8px;
+}
+
+.gallery::-webkit-scrollbar-track {
+  background: #1b1d1a;
+  border-radius: 10px;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+.gallery::-webkit-scrollbar-thumb:hover {
+  background: #777;
 }
 
 .gallery img {
-  flex: 0 0 auto;
+  flex-shrink: 0;
   width: 250px;
   height: auto;
   border-radius: 8px;
@@ -110,7 +125,6 @@ body {
 .gallery img:hover {
   transform: scale(1.05);
 }
-
 .truck h3 {
   color: #a3c168;
   font-size: 1.8rem;
