@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dusty Bin Co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Rajdhani', sans-serif;
+      background-color: #1b1d1a;
+      color: #f4f4f4;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1527766833261-b09c3163a791?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    header .content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      color: #a3c168;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #c2a76d;
+      margin-bottom: 1rem;
+    }
+
+    .features ul {
+      list-style: none;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #101110;
+      color: #888;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="content">
+      <h1>Dusty Bin Co.</h1>
+      <p>Twój brud to nasz chleb powszedni.</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>O nas</h2>
+    <p>
+      Założona w 1987 roku firma Dusty Bin Co. to lokalna legenda Sandy Shores. Od ponad trzech dekad dbamy o czystość pustynnych dróg,
+      podjazdów i zapomnianych zakątków hrabstwa Blaine. Specjalizujemy się w wywozie śmieci, recyklingu oraz uprzątaniu terenów
+      prywatnych i publicznych.
+    </p>
+  </section>
+
+  <section class="features">
+    <h2>Dlaczego my?</h2>
+    <ul>
+      <li>✅ Szybka i niezawodna obsługa – żadnych opóźnień, żadnych wymówek.</li>
+      <li>✅ Lokalny charakter – znamy każdy zakurzony zakątek Sandy.</li>
+      <li>✅ Ekologiczne podejście – sortujemy, przetwarzamy i oddajemy naturze to, co się da.</li>
+      <li>✅ Praca z pasją – dla nas to nie tylko śmieci, to styl życia!</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Kontakt</h2>
+    <p>📍 Sandy Shores, Blaine County<br>
+    📞 555-TRASH<br>
+    ✉️ kontakt@dustybinco.com</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Dusty Bin Co. – Wszystkie prawa zastrzeżone.
+  </footer>
+</body>
+</html>
