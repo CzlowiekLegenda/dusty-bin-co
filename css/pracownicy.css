@@ -105,6 +105,7 @@ body {
   color: #ccc;
 }
 
+/* STOPKA */
 footer {
   background-color: #101110;
   color: #888;
@@ -114,6 +115,7 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* RESPONSYWNOŚĆ */
 @media (max-width: 768px) {
   .team {
     flex-direction: column;
