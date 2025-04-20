@@ -74,7 +74,7 @@ body {
 }
 
 .truck {
-  max-width: 1300px; /* lub 100% */
+  max-width: 1900px; /* lub 100% */
   margin: auto;
   padding: 30px;
   background: rgba(0, 0, 0, 0.5);
