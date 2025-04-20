@@ -91,8 +91,9 @@ body {
   flex-wrap: wrap;
   gap: 25px;
   margin: 0 auto 30px;
-  max-width: 1200px; /* Dodajemy maksymalną szerokość */
+  max-width: 100%;
   width: 100%;
+  padding: 0 40px;
 }
 
 .gallery::-webkit-scrollbar {
