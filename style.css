@@ -16,6 +16,58 @@ body {
   color: white;
 }
 
+section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  margin-bottom: 60px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #c2a76d;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+section p {
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.features li::before {
+  content: '✅';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #a3c168;
+  font-size: 1.2rem;
+}
+
+footer {
+  background-color: #101110;
+  color: #888;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 /* NAVBAR */
 .navbar {
   display: flex;
@@ -118,5 +170,7 @@ body {
   .nav-links li a {
     font-size: 1rem;
   }
+
+
 }
 
