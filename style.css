@@ -104,6 +104,11 @@ footer {
   color: #c2a76d;
 }
 
+.nav-links li a:visited {
+  color: #f4e5c0;
+  text-decoration: none;
+}
+
 /* HERO */
 .hero {
   background: url('assets/background.png') no-repeat center center/cover;
