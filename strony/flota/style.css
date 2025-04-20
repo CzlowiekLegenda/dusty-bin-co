@@ -1,4 +1,4 @@
-/* Import czcionki */
+
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap');
 
 * {
@@ -13,7 +13,7 @@ body {
   color: white;
 }
 
-/* Navbar ogólnie */
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -26,14 +26,12 @@ body {
   z-index: 10;
 }
 
-/* Logo */
 .logo img {
   height: 40px;
   max-width: 160px;
   object-fit: contain;
 }
 
-/* Menu nawigacyjne */
 .nav-links {
   list-style: none;
   display: flex;
@@ -56,21 +54,84 @@ body {
   text-decoration: none;
 }
 
-/* Responsywność */
+/* TREŚĆ */
+.section-container {
+  padding: 120px 20px 60px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.section-container h1 {
+  color: #c2a76d;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.section-container p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #ddd;
+}
+
+.fleet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.vehicle {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.vehicle img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.vehicle h3 {
+  margin: 10px 0 5px;
+  color: #a3c168;
+}
+
+.vehicle p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.benefits {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 40px;
+}
+
+.benefits li {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #a3c168;
+}
+
+/* STOPKA */
+footer {
+  background-color: #101110;
+  color: #888;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* RESPONSYWNOŚĆ */
 @media (max-width: 768px) {
-  .navbar {
+  .fleet {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  .nav-links li a {
-    font-size: 1rem;
+    align-items: center;
   }
 }
