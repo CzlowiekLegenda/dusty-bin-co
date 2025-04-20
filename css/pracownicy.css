@@ -105,6 +105,41 @@ body {
   color: #ccc;
 }
 
+.roles {
+  margin-top: 60px;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.roles h2 {
+  font-size: 2rem;
+  color: #c2a76d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.roles ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.roles ul li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  text-align: left;
+  color: #eee;
+}
+
+.roles ul li strong {
+  color: #a3c168;
+}
+
+
 /* STOPKA */
 footer {
   background-color: #101110;
