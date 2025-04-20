@@ -74,26 +74,30 @@ body {
 }
 
 .truck {
-  max-width: 1000px;
-  width: 100%;
-  margin: auto;
-  text-align: center;
   background: rgba(0, 0, 0, 0.5);
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  max-width: 1200px; /* było 900px */
+  width: 90%;
+  margin: auto;
+  text-align: center;
 }
 
 /* GALERIA NA GÓRZE */
 .gallery {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  gap: 20px;
+  justify-content: center;
+  gap: 25px;
   overflow-x: auto;
-  padding-bottom: 20px;
-  margin-bottom: 30px;
-  scroll-behavior: smooth;
+  padding: 10px 0 30px;
+  margin-bottom: 20px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.gallery::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 .gallery img {
@@ -101,7 +105,7 @@ body {
   width: 220px;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
 }
 
